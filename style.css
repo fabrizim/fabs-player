@@ -1,0 +1,271 @@
+
+/* jPlayer
+--------------------------------------------------------------------*/
+.jp-playlist-player {
+    position: relative;
+    margin: 0 4px;
+}
+.jp-playlist-player #jp_album_art_container{
+    float: right;
+    width: 90px;
+    position: relative;
+    min-height: 90px;
+}
+#jp_album_art_bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0,0,0,.5);
+    *background-color: #333;
+}
+.jp-playlist-player #jp_album_art a{
+    display: block;
+    width: auto;
+    padding: 0; margin: 0;
+}
+.jp-playlist-player #jp_album_art img{
+    width: 100%;
+}
+.jp-volume-bar{
+    background: #111;
+    border: 1px solid #333;
+    margin: 6px 19px 5px;
+    position: relative;
+    cursor: pointer;
+}
+.jp-volume-bar-value{
+    background: #1F96C2;
+    height: 3px;
+}
+#jplayer_volume_min{
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 12px;
+    top: -5px;
+    left: -18px;
+    background: transparent url(images/volume.png) no-repeat -25px 0;
+}
+#jplayer_volume_max{
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 12px;
+    top: -5px;
+    right: -18px;
+    background: transparent url(images/volume.png) no-repeat 0 0;
+}
+.jp-time-info{
+    display: block;
+    font-size: .8em;
+    text-align:center;
+}
+.jp-player-container{
+    position: relative;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    zoom: 1;
+}
+#jp_song_info {
+    font-size: .9em;
+}
+#jp_song_info span{
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+}
+#jp_album_title {
+    color: #999;
+}
+#jplayer_play, #jplayer_pause, #jplayer_previous, #jplayer_next, #jplayer_playlist_toggle{
+    left: 0;
+    height: 41px;
+    width: 40px;
+    z-index: 2;
+    padding: 0;
+    background: transparent url(images/rdio-buttons.png) no-repeat;
+    background-position: -61px 0;
+    zoom: 1;
+}
+#jplayer_play, #jplayer_pause{
+    left: 30px;
+}
+#jplayer_pause {
+    background-position: -126px -0px;
+    z-index: 1;
+}
+#jplayer_play:hover{
+    background-position: -61px -60px;
+}
+#jplayer_play:active{
+    background-position: -61px -120px;
+}
+#jplayer_pause:hover{
+    background-position: -126px -60px;
+}
+#jplayer_pause:active{
+    background-position: -126px -120px;
+}
+#jplayer_previous{
+    left: 0;
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+    background-position: 0 -5px;
+}
+#jplayer_previous:hover{
+    background-position: 0 -65px;
+}
+#jplayer_previous:active{
+    background-position: 0 -125px;
+}
+#jplayer_next{
+    left: 70px;
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+    background-position: -197px -5px;
+}
+#jplayer_next:hover{
+    background-position: -197px -65px;
+}
+#jplayer_next:active{
+    background-position: -197px -125px;
+}
+#jplayer_playlist_toggle{
+    left: auto;
+    right: 0px;
+    margin-top: 5px;
+    height: 30px;
+    width: 30px;
+    background-position: -296px -5px;
+}
+#jplayer_playlist_toggle:hover{
+    background-position: -296px -65px;
+}
+#jplayer_playlist_toggle:active{
+    background-position: -296px -125px;
+}
+.jp-playlist-hidden #jplayer_playlist_toggle{
+    background-position: -260px -5px;
+}
+.jp-playlist-hidden #jplayer_playlist_toggle:hover{
+    background-position: -260px -65px;
+}
+.jp-playlist-hidden #jplayer_playlist_toggle:active{
+    background-position: -260px -125px;
+}
+
+.jp-controls, .jp-controls li{
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.jp-controls{
+    display: block;
+    height: 45px;
+    margin: 4px 0 0;
+}
+.jp-controls li a{
+    position: absolute;
+    display: block;
+    position: absolute;
+    text-indent: -9999em;
+}
+.jp-progress{
+    position: relative;
+    border: 1px solid #333;
+}
+.jp-load-bar{
+    position: relative;
+    height: 3px;
+    background: #222;
+    cursor: pointer;
+}
+.jp-play-bar{
+    position: relative;
+    background: #75c2df;
+    height: 3px;
+}
+#jplayer_playlist ul, #jplayer_playlist li {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#jplayer_playlist ul{
+    border: 1px solid #333;
+    overflow: auto;
+    max-height: 80px;
+}
+#jplayer_playlist li a{
+    display: block;
+    padding: 2px 4px;
+    background-color: #111;
+    font-size: .8em;
+}
+#jplayer_playlist li a.jplayer_playlist_current{
+    background-color: #000;
+    color: #75c2df;
+}
+#jplayer_playlist{
+    overflow: hidden;
+    position: relative;
+}
+.jp-playlist-hidden #jplayer_playlist{
+    height: 0px;
+}
+#dsq-global-toolbar{
+    z-index: 10;
+}
+#dsq-toolbar-dropdown-wrap{
+    z-index: 10;
+}
+#dsq-toolbar-dropdown-wrap h4{
+    font-size: 13px;
+}
+.jp-mp3-link:link, .jp-mp3-link:visited{
+    
+}
+.jp-mp3-link:hover{
+    text-decoration: none;
+}
+.jp-mp3-link .jp-mp3-button{
+    background: url(images/small-rdio-buttons.png) 0 0;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin: 0 0 0 4px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.ie7 .jp-mp3-link .jp-mp3-button {
+    top: -1px;
+    left: 2px;
+}
+.jp-mp3-link:hover .jp-mp3-button{
+    background-position: 0 -21px;
+}
+.jp-mp3-link:active .jp-mp3-button{
+    background-position: 0 -42px;
+}
+
+.jp-mp3-link-playing:link, .jp-mp3-link-playing:visited{
+    color: #75c2df;
+}
+
+.jp-mp3-link-playing .jp-mp3-button{
+    background: url(images/small-rdio-buttons.png) -23px 0;
+}
+.jp-mp3-link-playing:hover .jp-mp3-button{
+    background: url(images/small-rdio-buttons.png) -23px -21px;
+}
+.jp-mp3-link-playing:active .jp-mp3-button{
+    background: url(images/small-rdio-buttons.png) -23px -42px;
+}
