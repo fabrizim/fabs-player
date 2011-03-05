@@ -13,7 +13,7 @@ function fabs_player_instance($options=array())
         ?>
         <script type="text/javascript" src="<?php echo plugins_url('/js/jquery.cookie.js', __FILE__); ?>"></script>
         <script type="text/javascript" src="<?php echo plugins_url('/jplayer/jQuery.jPlayer.1.2.0/jquery.jplayer.min.js', __FILE__); ?>"></script>
-        <script type="text/javascript" src="<?php echo plugins_url('/js/jplayer.playlist.js', __FILE__); ?>"></script>
+        <script type="text/javascript" src="<?php echo plugins_url('/js/fabsplayer.js', __FILE__); ?>"></script>
         <script type="text/javascript">
         new FabsPlayer("#jquery_jplayer", "<?php echo $swfPath ?>", <?php echo json_encode($mp3s); ?>);
         </script>
